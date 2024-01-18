@@ -1,5 +1,5 @@
 ---
-title: Mi tercera publicación en el blog
+title: Mi segundo proyecto de desarrollo
 author: Alumno de Astro
 description: "Tuve algunos problemas, pero preguntar en la comunidad me ayudó mucho."
 image:
