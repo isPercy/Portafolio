@@ -1,19 +1,70 @@
 ---
-const pageTitle = "Juan Pablo Godoy";
+const minombre = "Juan Pablo Godoy";
 ---
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-		<style>
-			html {font-family: source sans pro;}
-		</style>
-	</head>
-	<body>
-		<h1 class="text-3xl">Mi sitio Astro.</h1>
-		<p>sexo</p>
-	</body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="text-center pt-16">
+        <h1 class="text-6xl font-bold">Bienvenido a Mi Portafolio</h1>
+        <p class="text-xl mt-2">Un vistazo a mi trabajo y habilidades</p>
+    </header>
+    <main class="px-24 py-16">
+        <section class="mt-16 pb-20">
+            <h2 class="text-4xl font-bold mb-8">Acerca de mí</h2>
+            <p class="text-lg">
+                Hola, Yo soy {minombre}..
+            </p>
+        </section>
+        <section>
+            <h2 class="text-4xl font-bold mb-8">Proyectos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 p-4 rounded shadow">
+                    <h3 class="text-2xl font-bold">Proyecto 1</h3>
+                    <p>Descripción detallada del proyecto 1.</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded shadow">
+                    <h3 class="text-2xl font-bold">Proyecto 2</h3>
+                    <p>Descripción detallada del proyecto 2.</p>
+                </div>
+            </div>
+        </section>
+        <section class="mt-16">
+            <h2 class="text-4xl font-bold mb-8">Habilidades</h2>
+            <ul class="list-none pl-0 flex space-x-4">
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                    </svg>
+                    <p>Habilidad 1</p>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                    </svg>
+                    <p>Habilidad 2</p>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                    </svg>
+                    <p>Habilidad 3</p>
+                </li>
+            </ul>
+        </section>    
+    </main>
+    <footer class="bg-gray-800 text-center py-8 mt-16">
+        <p>Gracias por visitar mi portafolio</p>
+    </footer>
+</body>
 </html>
