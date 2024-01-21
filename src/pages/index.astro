@@ -1,4 +1,11 @@
 ---
+import Giticon from '../components/svg/giticon.astro'; //Nombre del import siempre en mayus o no funcionará
+import Pythonicon from '../components/svg/pythonicon.astro';
+import Nodeicon from '../components/svg/nodeicon.astro';
+import Csharpicon from '../components/svg/csharpicon.astro';
+import Npmicon from '../components/svg/npmicon.astro';
+import Tailwindicon from '../components/svg/tailwindicon.astro';
+import Typescripticon from '../components/svg/typescripticon.astro';
 const minombre = "Juan Pablo Godoy";
 ---
 <html lang="es">
@@ -17,48 +24,56 @@ const minombre = "Juan Pablo Godoy";
         <section class="mt-16 pb-20">
             <h2 class="text-4xl font-bold mb-8">Acerca de mí</h2>
             <p class="text-lg">
-                Hola, Yo soy {minombre}..
+                Hola, Yo soy {minombre}. Mi gran pasión es la innovación tecnológica y el descubrimiento de nuevas herramientas de desarrollo.
             </p>
         </section>
         <section>
             <h2 class="text-4xl font-bold mb-8">Proyectos</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="bg-gray-800 p-4 rounded shadow">
-                    <h3 class="text-2xl font-bold">Proyecto 1</h3>
+                    <h3 class="text-2xl font-bold">Desarrollo de sistema de gestión de solicitudes</h3>
                     <p>Descripción detallada del proyecto 1.</p>
                 </div>
                 <div class="bg-gray-800 p-4 rounded shadow">
-                    <h3 class="text-2xl font-bold">Proyecto 2</h3>
+                    <h3 class="text-2xl font-bold">Sistema de gestion de inventario</h3>
                     <p>Descripción detallada del proyecto 2.</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded shadow">
+                    <h3 class="text-2xl font-bold">Machine Learning de eventos cardíacos</h3>
+                    <p>Descripción detallada del proyecto 3.</p>
                 </div>
             </div>
         </section>
         <section class="mt-16">
             <h2 class="text-4xl font-bold mb-8">Habilidades</h2>
-            <ul class="list-none pl-0 flex space-x-4">
+            <ul class="list-none pl-0 flex space-x-4 ">
                 <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-white">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
-                    </svg>
-                    <p>Habilidad 1</p>
+                    <Giticon/>
+                    <p>GitHub</p>
                 </li>
                 <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-white">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
-                    </svg>
-                    <p>Habilidad 2</p>
+                    <Pythonicon/>
+                    <p>Python</p>
                 </li>
                 <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-white">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
-                    </svg>
-                    <p>Habilidad 3</p>
+                    <Nodeicon/>
+                    <p>NodeJS</p>
+                </li>
+                <li>
+                    <Csharpicon/>
+                    <p>NodeJS</p>
+                </li>
+                <li>
+                    <Npmicon/>
+                    <p>npm</p>
+                </li>
+                <li>
+                    <Tailwindicon />
+                    <p>Tailwind</p>
+                </li>
+                <li>
+                    <Typescripticon />
+                    <p>TypeScript</p>
                 </li>
             </ul>
         </section>    
