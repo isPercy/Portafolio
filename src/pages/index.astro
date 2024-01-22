@@ -1,30 +1,31 @@
 ---
-import Giticon from '../components/svg/giticon.astro'; //Nombre del import siempre en mayus o no funcionará
-import Pythonicon from '../components/svg/pythonicon.astro';
-import Nodeicon from '../components/svg/nodeicon.astro';
-import Csharpicon from '../components/svg/csharpicon.astro';
-import Npmicon from '../components/svg/npmicon.astro';
-import Tailwindicon from '../components/svg/tailwindicon.astro';
-import Typescripticon from '../components/svg/typescripticon.astro';
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Herramientas from '../components/herramientas.astro';
 const minombre = "Juan Pablo Godoy";
 ---
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/svg" href="/icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>Portfolio</title>
+    <style>
+        *{
+            font-family: SourceSansPro-Bold.ttf, source-sans-pro.black.ttf;
+        }
+    </style>
 </head>
 <body class="bg-gray-900 text-white">
-    <header class="text-center pt-16">
-        <h1 class="text-6xl font-bold">Bienvenido a Mi Portafolio</h1>
-        <p class="text-xl mt-2">Un vistazo a mi trabajo y habilidades</p>
-    </header>
+
+    <Header />
+
     <main class="px-24 py-16">
         <section class="mt-16 pb-20">
             <h2 class="text-4xl font-bold mb-8">Acerca de mí</h2>
             <p class="text-lg">
-                Hola, Yo soy {minombre}. Mi gran pasión es la innovación tecnológica y el descubrimiento de nuevas herramientas de desarrollo.
+                Hola, Yo soy {minombre}. Desarrollador Web y Modelo de Patas. Soy de Quillota, Chile. Especializado en Procesos de Desarrollo de Soluciones Informáticas.
             </p>
         </section>
         <section>
@@ -44,42 +45,11 @@ const minombre = "Juan Pablo Godoy";
                 </div>
             </div>
         </section>
-        <section class="mt-16">
-            <h2 class="text-4xl font-bold mb-8">Habilidades</h2>
-            <ul class="list-none pl-0 flex space-x-4 ">
-                <li>
-                    <Giticon/>
-                    <p>GitHub</p>
-                </li>
-                <li>
-                    <Pythonicon/>
-                    <p>Python</p>
-                </li>
-                <li>
-                    <Nodeicon/>
-                    <p>NodeJS</p>
-                </li>
-                <li>
-                    <Csharpicon/>
-                    <p>NodeJS</p>
-                </li>
-                <li>
-                    <Npmicon/>
-                    <p>npm</p>
-                </li>
-                <li>
-                    <Tailwindicon />
-                    <p>Tailwind</p>
-                </li>
-                <li>
-                    <Typescripticon />
-                    <p>TypeScript</p>
-                </li>
-            </ul>
-        </section>    
+
+        <Herramientas />
+
     </main>
-    <footer class="bg-gray-800 text-center py-8 mt-16">
-        <p>Gracias por visitar mi portafolio</p>
-    </footer>
+    
+    <Footer />
 </body>
 </html>
