@@ -1,8 +1,8 @@
 ---
-title: 'Mi Primer proyecto de desarrollo'
-pubDate: 2022-07-01
-description: 'Este es la primera publicación de mi nuevo blog Astro.'
-author: 'Alumno de Astro'
+title: 'Desarrollo de sistema de gestión de solicitudes'
+pubDate: 2023-07-01
+description: ''
+author: 'Juan Pablo Godoy'
 image:
     url: 'https://docs.astro.build/assets/full-logo-light.png'
     alt: 'El logotipo completo de Astro.'
