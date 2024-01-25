@@ -4,11 +4,12 @@ import { ViewTransitions } from 'astro:transitions';
 import Header from '../components/header.astro';
 import Disponiblebutton from '../components/button.astro';
 import Footer from '../components/footer.astro';
-import Herramientas from '../components/herramientas.astro';
+import Tecnologias from '../components/tecnologias.astro';
 const minombre = "Juan Pablo Godoy";
 ---
 <html lang="es">
 <head>
+    <meta name="description" content="Este sitio es un portafolio donde se describen las capacidades y destrezas del desarrollador Juan Pablo Godoy, tambien agregando unos los proyectos desarrollados." />
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg" href="/icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,15 +19,19 @@ const minombre = "Juan Pablo Godoy";
     
 </head>
 <body class="bg-gray-900 text-white">
-    <main class="container max-w-3xl mx-auto py-16">
+    <main class="container max-w-3xl mx-auto md:mx-auto py-16">
         <Header />
 
         <section class="mt-16 pb-20">
-            <h2 class="text-4xl font-bold mb-8">Acerca de mí</h2>
-            <p class="text-2xl pb-4">
-                Hola, Yo soy {minombre}.<br>
-                Desarrollador Web full stack y Modelo de Patas. Soy de Quillota, Chile. Especializado en Procesos de Desarrollo de Soluciones Informáticas.
-            </p> 
+            <div class="text-pretty">
+                <h2 class="text-4xl font-bold mb-8">Acerca de mí</h2>
+                <h3 class="text-2xl pb-4">
+                    Hola, Yo soy {minombre}.
+                </h3>
+                <p class="text-xl pb-4">
+                    Desarrollador Web full stack y Modelo de Patas. Soy de Quillota, Chile. Especializado en Procesos de Desarrollo de Soluciones Informáticas.
+                </p>
+            </div>
             <Disponiblebutton />   
         </section>
 
@@ -48,7 +53,7 @@ const minombre = "Juan Pablo Godoy";
             </div>
         </section>
 
-        <Herramientas />
+        <Tecnologias />
 
     </main>
     
