@@ -2,10 +2,11 @@
 import { ViewTransitions } from 'astro:transitions'; // Importamos el modulo de tansicion entre paginas
 
 import Header from '../components/header.astro';
+import Aboutme from '../components/aboutme.astro';
 import Disponiblebutton from '../components/button.astro';
+import Projects from '../components/projects.astro';
 import Footer from '../components/footer.astro';
-import Tecnologias from '../components/tecnologias.astro';
-const minombre = "Juan Pablo Godoy";
+import Tecnology from '../components/tecnology.astro';
 ---
 <html lang="es">
 <head>
@@ -18,39 +19,26 @@ const minombre = "Juan Pablo Godoy";
     <ViewTransitions />
 </head>
 <body class="min-h-screen bg-gray-900 text-white">
-    <main class="container max-w-3xl mx-auto py-16 px-4">
+
+    <main class="container max-w-3xl mx-auto">
+
         <Header />
-        <section class="mt-16 py-16">
-            <div class="text-pretty">
-                <h2 class="text-4xl font-bold mb-8">Acerca de mí</h2>
-                <h3 class="text-2xl pb-4">
-                    Hola, yo soy <strong>{minombre}</strong>.
-                </h3>
-                <p class="text-xl pb-4">
-                    Soy desarrollador Web full stack y Modelo de Patas. Soy de Quillota, Chile. Especializado en Procesos de Desarrollo de Soluciones Informáticas.
-                </p>
-            </div>
+        
+        <section class="py-16 px-2">
+            <Aboutme />
             <Disponiblebutton />
         </section>
-        <section>
-            <h2 class="text-4xl font-bold py-16">Proyectos</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-gray-800 p-4 rounded shadow">
-                    <a href="/posts/project1/" class="text-2xl font-bold">Desarrollo de sistema de gestión de solicitudes</a>
-                    <p>Descripción detallada del proyecto 1.</p>
-                </div>
-                <div class="bg-gray-800 p-4 rounded shadow">
-                    <h3 class="text-2xl font-bold">Sistema de gestion de inventario</h3>
-                    <p>Descripción detallada del proyecto 2.</p>
-                </div>
-                <div class="bg-gray-800 p-4 rounded shadow">
-                    <h3 class="text-2xl font-bold">Machine Learning de eventos cardíacos</h3>
-                    <p>Descripción detallada del proyecto 3.</p>
-                </div>
-            </div>
+
+        <section class="py-16 px-2">
+            <Projects />
         </section>
-        <Tecnologias />
+
+        <section class="py-16 px-2">
+            <Tecnology />
+        </section>
     </main>
+
     <Footer />
+
 </body>
 </html>
