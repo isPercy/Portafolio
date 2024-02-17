@@ -1,44 +1,22 @@
 ---
-import { ViewTransitions } from 'astro:transitions'; // Importamos el modulo de tansicion entre paginas
+import Template from "../layouts/template.astro";
 
 import Header from '../components/header.astro';
 import Aboutme from '../components/aboutme.astro';
 import Disponiblebutton from '../components/button.astro';
 import Projects from '../components/projects.astro';
-import Footer from '../components/footer.astro';
 import Tecnology from '../components/tecnology.astro';
 ---
-<html lang="es">
-<head>
-    <meta name="description" content="Este sitio es un portafolio donde se describen las capacidades y destrezas del desarrollador Juan Pablo Godoy, tambien agregando unos los proyectos desarrollados." />
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg" href="/icon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <title>Portfolio</title>
-    <ViewTransitions />
-</head>
-<body class="min-h-screen bg-gray-900 text-white">
-
-    <main class="container max-w-3xl mx-auto">
-
-        <Header />
-        
-        <section class="py-16 px-2">
-            <Aboutme />
-            <Disponiblebutton />
-        </section>
-
-        <section class="py-16 px-2">
-            <Projects />
-        </section>
-
-        <section class="py-16 px-2">
-            <Tecnology />
-        </section>
-    </main>
-
-    <Footer />
-
-</body>
-</html>
+<Template>
+    <Header />
+    <section class="py-16 px-2">
+        <Aboutme />
+        <Disponiblebutton />
+    </section>
+    <section class="py-16 px-2">
+        <Projects />
+    </section>
+    <section class="py-16 px-2">
+        <Tecnology />
+    </section>
+</Template>
