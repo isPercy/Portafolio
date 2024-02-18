@@ -1,6 +1,7 @@
 ---
 import Template from "../layouts/template.astro";
 import Goback from "../components/back.astro";
+import Building from "../components/building.astro";
 
 const pageTitle = "Proyecto A";
 ---
@@ -9,7 +10,7 @@ const pageTitle = "Proyecto A";
     <h1 class="text-4xl font-bold py-12 text-justify-center ">
         Proyecto: Sistema para atención de ticket
     </h1>
-    <div class="">
+    <div class="hidden">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae expedita earum ipsam consequuntur autem, minus hic, 
             velit explicabo praesentium beatae, placeat debitis vel aliquid. Culpa, consequatur? Neque nesciunt fugit libero!
         </p>
@@ -49,4 +50,5 @@ const pageTitle = "Proyecto A";
             beatae, placeat debitis vel aliquid. Culpa, consequatur? Neque nesciunt fugit libero!
         </p>
     </div>
+    <Building />
 </Template>

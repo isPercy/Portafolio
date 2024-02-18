@@ -16,6 +16,18 @@ const { pageTitle } = Astro.props;
 </head>
 <body class="min-h-screen bg-slate-900 text-white">
 
+    <div class="absolute z-20 top-0 inset-x-0 flex justify-center overflow-hidden pointer-events-none">
+        <div class="w-[108rem] fixed flex-none flex justify-end">
+            <picture>
+                <source srcset="../../public/docs@30.8b9a76a2.avif" type="image/avif">
+                <img src="../../public/docs@30.8b9a76a2.avif" alt="" class="w-[71.75rem] flex-none max-w-none dark:hidden" decoding="async">
+            </picture>
+            <picture>
+                <source srcset="../../public/docs-dark@30.1a9f8cbf.avif" type="image/avif">
+                <img src="../../public/docs-dark@30.1a9f8cbf.avif" alt="" class="w-[90rem] flex-none max-w-none hidden dark:block" decoding="async">
+            </picture>
+        </div>
+    </div>
     <main class="container max-w-3xl mx-auto">
 
         <slot />
