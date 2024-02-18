@@ -1,6 +1,8 @@
 ---
 import { ViewTransitions } from 'astro:transitions'; // Importamos el modulo de tansicion entre paginas
 import Footer from '../components/footer.astro';
+
+const { pageTitle } = Astro.props;
 ---
 <html lang="es">
 <head>
@@ -9,10 +11,10 @@ import Footer from '../components/footer.astro';
     <link rel="icon" type="image/svg" href="/icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <title>Portfolio Juan Pablo</title>
+    <title>{ pageTitle }</title>
     <ViewTransitions />
 </head>
-<body class="min-h-screen bg-gray-900 text-white">
+<body class="min-h-screen bg-slate-900 text-white">
 
     <main class="container max-w-3xl mx-auto">
 
