@@ -6,22 +6,32 @@ import Aboutme from '../components/aboutme.astro';
 import Disponiblebutton from '../components/button.astro';
 import Projects from '../components/projects.astro';
 import Tecnology from '../components/tecnology.astro';
+import Perfil from '../components/perfil.astro';
 
 import Sidebar from '../components/sidebar.astro';
 
 const pageTitle = "Portfolio Juan Pablo Godoy";
 ---
 <Template pageTitle={ pageTitle }>
+    
     <Header />
     <Sidebar />
-    <section id="sobremi" class="py-16 px-2">
-        <Aboutme />
+
+    <section id="perfil" class="py-14 md:px-0 px-4">
+        <Perfil />
         <Disponiblebutton />
     </section>
-    <section id="proyectos" class="py-16 px-2">
+    
+    <section id="proyectos" class="py-14 md:px-0 px-4">
         <Projects />
     </section>
-    <section id="tecnologias" class="py-16 px-2">
+
+    <section id="sobremi" class="py-14 md:px-0 px-4">
+        <Aboutme />
+        
+    </section>
+
+    <section id="tecnologias" class="py-14 md:px-0 px-4">
         <Tecnology />
     </section>
 </Template>
