@@ -1,7 +1,7 @@
 ---
 import Csharpicon from      '../../public/icons/csharpicon.astro';
 import Cssicon from         '../../public/icons/cssicon.astro';
-import Giticon from         '../../public/icons/giticon.astro';
+import Giticon from         '../../public/icons/git.astro';
 import Htmlicon from        '../../public/icons/htmlicon.astro';
 import Javaicon from        '../../public/icons/javaicon.astro';
 import Nodeicon from        '../../public/icons/nodeicon.astro';
@@ -9,56 +9,82 @@ import Npmicon from         '../../public/icons/npmicon.astro';
 import Pythonicon from      '../../public/icons/pythonicon.astro';
 import Tailwindicon from    '../../public/icons/tailwindicon.astro';
 import Typescripticon from  '../../public/icons/typescripticon.astro';
+
+import AWSicon from '../../public/icons/awsicon.astro';
+import Reacticon from '../../public/icons/reacticon.astro';
+import Djangoicon from '../../public/icons/djangoicon.astro';
+import Bootstrapicon from '../../public/icons/bootstrapicon.astro';
 ---
 <style>
     .gray{
         filter: grayscale(100%);
+        transition: filter .7s;
+        transition-delay: .1s;
     }
     .gray:hover{
-        transition-duration: 500ms;
         filter: grayscale(0%);
     }
 </style>
 
 <h2 class="text-4xl font-bold py-8">Tecnologías</h2>
-<ul class="grid md:grid-cols-5 grid-cols-2">
-    <li class="gray py-4 flex flex-col justify-center items-center">
+<ul class="grid md:grid-cols-6 grid-cols-2">
+    <li class=" gray py-4 flex flex-col justify-center items-center">
         <Giticon/>
-        <p>GitHub</p>
+        <p>Git</p>
     </li>
-    <li class="gray py-4 flex flex-col justify-center items-center">
-        <Pythonicon/>
-        <p>Python</p>
-    </li>
-    <li class="gray py-4 flex flex-col justify-center items-center">
+    <li class=" gray py-4 flex flex-col justify-center items-center">
         <Nodeicon/>
         <p>NodeJS</p>
     </li>
-    <li class="gray py-4 flex flex-col justify-center items-center">
-        <Csharpicon/>
-        <p>C sharp</p>
-    </li>
-    <li class="gray py-4 flex flex-col justify-center items-center">
+    <li class=" gray py-4 flex flex-col justify-center items-center">
         <Npmicon/>
         <p>npm</p>
     </li>
-    <li class="gray py-4 flex flex-col justify-center items-center">
-        <Typescripticon />
-        <p>TypeScript</p>
-    </li>
-    <li class="gray py-4 flex flex-col justify-center items-center">
-        <Htmlicon />
-        <p>HTML 5</p>
-    </li>
-    <li class="gray py-4 flex flex-col justify-center items-center">
-        <Cssicon />
-        <p>CSS 3</p>
-    </li>
-    <li class="gray py-4 flex flex-col justify-center items-center">
+    <li class=" gray py-4 flex flex-col justify-center items-center">
         <Tailwindicon />
         <p>Tailwind</p>
     </li>
-    <li class="gray py-4 flex flex-col justify-center items-center">
+    <li class=" gray py-4 flex flex-col justify-center items-center">
+        <Djangoicon />
+        <p>Django</p>
+    </li>
+    <li class=" gray py-4 flex flex-col justify-center items-center">
+        <Bootstrapicon />
+        <p>Bootstrap</p>
+    </li>
+    <li class=" gray py-4 flex flex-col justify-center items-center">
+        <Reacticon />
+        <p>React</p>
+    </li>
+    <li class=" gray py-4 flex flex-col justify-center items-center">
+        <AWSicon />
+        <p>AWS</p>
+    </li>
+</ul>
+
+<h2 class="text-4xl font-bold py-8">Lenguajes</h2>
+<ul class="grid md:grid-cols-6 grid-cols-2">
+    <li class=" gray py-4 flex flex-col justify-center items-center">
+        <Pythonicon/>
+        <p>Python</p>
+    </li>
+    <li class=" gray py-4 flex flex-col justify-center items-center">
+        <Csharpicon/>
+        <p>C sharp</p>
+    </li>
+    <li class=" gray py-4 flex flex-col justify-center items-center">
+        <Typescripticon />
+        <p>TypeScript</p>
+    </li>
+    <li class=" gray py-4 flex flex-col justify-center items-center">
+        <Htmlicon />
+        <p>HTML 5</p>
+    </li>
+    <li class=" gray py-4 flex flex-col justify-center items-center">
+        <Cssicon />
+        <p>CSS 3</p>
+    </li>
+    <li class=" gray py-4 flex flex-col justify-center items-center">
         <Javaicon />
         <p>Java</p>
     </li>

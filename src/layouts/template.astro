@@ -15,7 +15,12 @@ const { pageTitle } = Astro.props;
     <ViewTransitions />
 </head>
 <body class="min-h-screen bg-slate-900 text-white">
-
+    <style>
+        * {
+            font-family: "Source Sans Pro Black";
+            src: url("public/Fonts/SourceSansPro-Bold.ttf");
+        }
+    </style>
     <div class="relative -z-50 bg-cover top-0 flex justify-center pointer-events-none">
         <div class="w-[108rem] fixed flex-none flex justify-end">
             <picture>
