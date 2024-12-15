@@ -1,7 +1,6 @@
 ---
 import { ViewTransitions } from 'astro:transitions'; // Importamos el modulo de tansicion entre paginas
 import Footer from '../components/footer.astro';
-
 const { pageTitle } = Astro.props;
 ---
 <html lang="es">
@@ -12,6 +11,10 @@ const { pageTitle } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>{ pageTitle }</title>
+
+    <meta name="description" content="Este sitio es un portafolio donde se describen las capacidades y destrezas del desarrollador Juan Pablo Godoy, tambien agregando unos los proyectos desarrollados." />
+    <meta name="keywords" content="Portafolio, Juan Pablo Godoy, dev, developer, Portfolio, desarrollador full stack, ingeniero civil informatico" />
+    <meta name="author" content="Juan Pablo Godoy" />
     <ViewTransitions />
 </head>
 <body class="min-h-screen bg-slate-900 text-white">
